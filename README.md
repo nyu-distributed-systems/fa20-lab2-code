@@ -134,8 +134,17 @@ Provide line numbers for your implementation here: **FILL THIS IN**
 This last part briefly looks at how to synchronize physical times
 between processes. Traditionally this is done by having a client
 request the current time from a server, and then update its own
-clock based on the value returned by the server. There are two 
-main challenges with synchronization in this manner:
+clock based on the value returned by the server. 
+
+In this case we are not going to implement the entire NTP protocol
+and will make several simplifying assumptions:
+* Clients and servers agree on frequency: there is no skew.
+* Servers respond to messages as soon as they receive them, in terms
+  of Figure 3 in the paper this means $T_{i-2} = T_{i-1}$.
+* We only have one server, so we are not doing any filtering, etc.
+
+
+There are two main challenges with the simple synchronization:
 * First, messages take time to go between client and server. To
   address this problem clients try to measure message delays between
   them and the server. This however requires figuring out message delays.
