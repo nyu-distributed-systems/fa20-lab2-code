@@ -1,6 +1,6 @@
 # Lab 2: Clocks
 
-**Due:** October 14, 2021 9pm
+**Due:** October 15, 2022 9pm
 
 **NOTE:** [Hand-in instructions](#handing-in) are at the end of this document. 
 It is very important you follow these instructions. Failure to do so might result
@@ -8,6 +8,12 @@ in receiving 0 on this lab.
 
 ## Introduction
 In this lab you will implement Lamport clocks, and vector clocks. 
+While we covered the former in class, the later track causality and we have not
+talked about them before. You might want to read [this
+paper](https://cs.nyu.edu/~apanda/classes/fa21/papers/fidge88timestamps.pdf),
+[this
+video](https://www.oreilly.com/library/view/distributed-systems-in/9781491924914/video215280.html)
+or Wikipedia to understand that.
 Please make sure
 you have read the papers corresponding with this before beginning the lab.
 The instructions that follow are not nearly as detailed as the instructions
@@ -150,7 +156,7 @@ To handin this assignment:
   implementation notes to Part 3, and filling out the information below.
 * Commit and push all your changes.
 * Use `git rev-parse --short HEAD` to get a commit hash for your changes.
-* Fill out the [submission form](https://forms.gle/4h2ACsEExuRS4h33A) with
+* Fill out the [submission form](https://forms.gle/zEW7XcsuEMZzbodPA) with
   all of the information requested.
 
 We will be using information in the submission form to grade your lab, determine
